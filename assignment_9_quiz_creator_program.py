@@ -3,16 +3,15 @@
 #Add variable for question
 #Create loop so the user can input a question
 input_question = input("Enter a question: ")
-#"Does your mom know you're gay?"
-#Make user input 4 answers with a correct answer
-#"a. Yes b. No c. Maybe d. Not yet"
-answer_1 = input("Enter answer 1: ")
-answer_2 = input("Enter answer 2: ")
-answer_3 = input("Enter answer 3: ")
-answer_4 = input("Enter answer 4: ")
+#Changed variables to "answer_a... answer_d"
+answer_a = input("Enter answer a: ")
+answer_b = input("Enter answer b: ")
+answer_c = input("Enter answer c: ")
+answer_d = input("Enter answer d: ")
 #Make choices to make new questions or quit
 #Would you like to make a new question? or quit
-print(answer_1, answer_2, answer_3, answer_4)
+print(answer_a, answer_b, answer_c, answer_d)
+print(input_question)
 #Export to txt file (I DO NOT KNOW HOW!!!!!)
 #Add charisma and rizz up all the huzz (optional)
 #Start a fight club
