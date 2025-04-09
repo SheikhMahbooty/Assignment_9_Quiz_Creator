@@ -11,17 +11,22 @@ while True:
     answer_c = input("Enter answer c: ")
     answer_d = input("Enter answer d: ")
 #Input for the correct answer
-    correct = str(input("Correct answer (a/b/c/d): "))
-    if correct == "a":
-        correct = answer_a
-    if correct == "b":
-        correct = answer_b
-    if correct == "c":
-        correct = answer_c
-    if correct == "d":
-        correct = answer_d
-    else:
-        correct = input("Invalid input, enter a,b,c,d: ")
+    while True:
+        correct = str(input("Correct answer (a/b/c/d): "))
+        if correct == "a":
+            correct = answer_a
+            break
+        elif correct == "b":
+            correct = answer_b
+            break
+        elif correct == "c":
+            correct = answer_c
+            break
+        elif correct == "d":
+            correct = answer_d
+            break
+        else:
+            correct = print("Invalid input, enter a,b,c,d")
         
 #check if the variables are correct
     print(answer_a, answer_b, answer_c, answer_d)
