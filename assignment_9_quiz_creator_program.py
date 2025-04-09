@@ -2,7 +2,6 @@
 
 #Make python create a txt file and if user adds more questions, update the file every time a new question gets added
 file = open("quiz_questions.txt", "a")
-file.close()
 
 #Create loop so the user can input a question
 while True:
@@ -33,11 +32,13 @@ while True:
             break
         else:
             correct = print("\nInvalid input, enter a,b,c,d")
-        
+
+
+    file.write(f"Test write")
 #check if the variables are correct
 
     print(input_question)
     print(answer_a, answer_b, answer_c, answer_d)
     print(correct)
-
-#Export to txt file (I DO NOT KNOW HOW!!!!!)
+    
+file.close()
