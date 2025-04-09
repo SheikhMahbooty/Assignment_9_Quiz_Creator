@@ -34,7 +34,12 @@ while True:
             correct = print("\nInvalid input, enter a,b,c,d")
 
 
-    file.write(f"Test write")
+    file.write(f"Question: {input_question}")
+    file.write(f"a) {answer_a}")
+    file.write(f"b) {answer_b}")
+    file.write(f"c) {answer_c}")
+    file.write(f"d) {answer_d}")
+    file.write(f"Correct Answer: {correct}")
 #check if the variables are correct
 
     print(input_question)
