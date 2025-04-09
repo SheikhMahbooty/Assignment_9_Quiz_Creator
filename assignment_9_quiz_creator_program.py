@@ -11,7 +11,7 @@ while True:
     answer_c = input("Enter answer c: ")
     answer_d = input("Enter answer d: ")
 #Input for the correct answer
-    correct = input("Correct answer (a/b/c/d): ")
+    correct = str(input("Correct answer (a/b/c/d): "))
     if correct == "a":
         correct = answer_a
     if correct == "b":
@@ -20,6 +20,8 @@ while True:
         correct = answer_c
     if correct == "d":
         correct = answer_d
+    else:
+        correct = input("Invalid input, enter a,b,c,d: ")
         
 #check if the variables are correct
     print(answer_a, answer_b, answer_c, answer_d)
