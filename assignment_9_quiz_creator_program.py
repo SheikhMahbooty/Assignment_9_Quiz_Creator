@@ -5,11 +5,13 @@ while True:
     input_question = input("Enter a question or type 'exit' to exit: ") #Created question loop to exit or add a question
     if input_question.lower() == "exit":
         break
+
 #Changed variables to "answer_a... answer_d"
     answer_a = input("Enter answer a: ")
     answer_b = input("Enter answer b: ")
     answer_c = input("Enter answer c: ")
     answer_d = input("Enter answer d: ")
+    
 #Input for the correct answer
     while True:
         correct = str(input("Correct answer (a/b/c/d): "))
@@ -29,6 +31,7 @@ while True:
             correct = print("Invalid input, enter a,b,c,d")
         
 #check if the variables are correct
+            
     print(answer_a, answer_b, answer_c, answer_d)
     print(correct)
     print(input_question)
