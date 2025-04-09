@@ -1,5 +1,7 @@
 #Assignment 9: Create a program that ask user for a question, it will also ask for 4 possible answer (a,b,c,d) and the correct answer. Write the collected data to a text file. Ask another question until the user chose to exit.
 
+#Make python create a txt file and if user adds more questions, update the file every time a new question gets added
+
 #Create loop so the user can input a question
 while True:
     input_question = input("Enter a question or type 'exit' to exit: ") #Created question loop to exit or add a question
@@ -14,7 +16,7 @@ while True:
     
 #Input for the correct answer
     while True:
-        correct = str(input("Correct answer (a/b/c/d): "))
+        correct = str(input("\nCorrect answer (a/b/c/d): "))
         if correct == "a":
             correct = answer_a
             break
@@ -28,11 +30,12 @@ while True:
             correct = answer_d
             break
         else:
-            correct = print("Invalid input, enter a,b,c,d")
+            correct = print("\nInvalid input, enter a,b,c,d")
         
 #check if the variables are correct
-            
+
+    print(input_question)
     print(answer_a, answer_b, answer_c, answer_d)
     print(correct)
-    print(input_question)
+
 #Export to txt file (I DO NOT KNOW HOW!!!!!)
