@@ -9,7 +9,7 @@ while True:
     if input_question.lower() == "exit":
         break
 
-#Changed variables to "answer_a... answer_d"
+#Input variables for each answer
     answer_a = input("Enter answer a: ")
     answer_b = input("Enter answer b: ")
     answer_c = input("Enter answer c: ")
@@ -33,16 +33,15 @@ while True:
         else:
             correct = print("\nInvalid input, enter a,b,c,d")
 
-
+#Write the text within the txt file
     file.write(f"Question: {input_question}\n")
     file.write(f"a) {answer_a}\n")
     file.write(f"b) {answer_b}\n")
     file.write(f"c) {answer_c}\n")
     file.write(f"d) {answer_d}\n")
     file.write(f"Correct Answer: {correct}\n\n")
-    
-#check if the variables are correct
 
+#Print the question and answers to the shell for easier access
     print("\nThe inputted question is: ",input_question)
     print("a.",answer_a)
     print("b.",answer_b)
