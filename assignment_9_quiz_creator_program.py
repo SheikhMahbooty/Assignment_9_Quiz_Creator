@@ -1,6 +1,8 @@
 #Assignment 9: Create a program that ask user for a question, it will also ask for 4 possible answer (a,b,c,d) and the correct answer. Write the collected data to a text file. Ask another question until the user chose to exit.
 
 #Make python create a txt file and if user adds more questions, update the file every time a new question gets added
+file = open("quiz_questions.txt", "a")
+file.close()
 
 #Create loop so the user can input a question
 while True:
