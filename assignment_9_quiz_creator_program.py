@@ -10,8 +10,19 @@ while True:
     answer_b = input("Enter answer b: ")
     answer_c = input("Enter answer c: ")
     answer_d = input("Enter answer d: ")
-#Make choices to make new questions or quit
-#Would you like to make a new question? or quit
+#Input for the correct answer
+    correct = input("Correct answer (a/b/c/d): ")
+    if correct == "a":
+        correct = answer_a
+    if correct == "b":
+        correct = answer_b
+    if correct == "c":
+        correct = answer_c
+    if correct == "d":
+        correct = answer_d
+        
+#check if the variables are correct
     print(answer_a, answer_b, answer_c, answer_d)
+    print(correct)
     print(input_question)
 #Export to txt file (I DO NOT KNOW HOW!!!!!)
