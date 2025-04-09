@@ -48,6 +48,7 @@ while True:
     print("c.",answer_c)
     print("d.",answer_d)
     print("The correct answer is: ",correct_ans)
+    print("Note: the txt file will update if you exit the program, if you continue it will write a new question")
 
 #Close the file
 quiz_file.close()
