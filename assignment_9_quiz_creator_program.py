@@ -48,5 +48,6 @@ while True:
     print("c.",answer_c)
     print("d.",answer_d)
     print("The correct answer is: ",correct_ans)
-    
+
+#Close the file
 quiz_file.close()
