@@ -1,7 +1,7 @@
 #Assignment 9: Create a program that ask user for a question, it will also ask for 4 possible answer (a,b,c,d) and the correct answer. Write the collected data to a text file. Ask another question until the user chose to exit.
 
 #Make python create a txt file and if user adds more questions, update the file every time a new question gets added
-file = open("quiz_questions.txt", "a")
+quiz_file = open("quiz_questions.txt", "a")
 
 #Create loop so the user can input a question
 while True:
@@ -17,29 +17,29 @@ while True:
     
 #Input for the correct answer
     while True:
-        correct = str(input("\nCorrect answer (a/b/c/d): "))
-        if correct == "a":
-            correct = answer_a
+        correct_ans = str(input("\nCorrect answer (a/b/c/d): "))
+        if correct_ans == "a":
+            correct_ans = answer_a
             break
-        elif correct == "b":
-            correct = answer_b
+        elif correct_ans == "b":
+            correct_ans = answer_b
             break
-        elif correct == "c":
-            correct = answer_c
+        elif correct_ans == "c":
+            correct_ans = answer_c
             break
-        elif correct == "d":
-            correct = answer_d
+        elif correct_ans == "d":
+            correct_ans = answer_d
             break
         else:
-            correct = print("\nInvalid input, enter a,b,c,d")
+            correct_ans = print("\nInvalid input, enter a,b,c,d")
 
 #Write the text within the txt file
-    file.write(f"Question: {input_question}\n")
-    file.write(f"a) {answer_a}\n")
-    file.write(f"b) {answer_b}\n")
-    file.write(f"c) {answer_c}\n")
-    file.write(f"d) {answer_d}\n")
-    file.write(f"Correct Answer: {correct}\n\n")
+    quiz_file.write(f"Question: {input_question}\n")
+    quiz_file.write(f"a) {answer_a}\n")
+    quiz_file.write(f"b) {answer_b}\n")
+    quiz_file.write(f"c) {answer_c}\n")
+    quiz_file.write(f"d) {answer_d}\n")
+    quiz_file.write(f"Correct Answer: {correct_ans}\n\n")
 
 #Print the question and answers to the shell for easier access
     print("\nThe inputted question is: ",input_question)
@@ -47,6 +47,6 @@ while True:
     print("b.",answer_b)
     print("c.",answer_c)
     print("d.",answer_d)
-    print("The correct answer is: ",correct)
+    print("The correct answer is: ",correct_ans)
     
-file.close()
+quiz_file.close()
