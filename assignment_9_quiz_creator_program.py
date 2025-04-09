@@ -5,7 +5,7 @@ file = open("quiz_questions.txt", "a")
 
 #Create loop so the user can input a question
 while True:
-    input_question = input("Enter a question or type 'exit' to exit: ") #Created question loop to exit or add a question
+    input_question = input("\nEnter a question or type 'exit' to exit: ") #Created question loop to exit or add a question
     if input_question.lower() == "exit":
         break
 
@@ -40,9 +40,10 @@ while True:
     file.write(f"c) {answer_c}\n")
     file.write(f"d) {answer_d}\n")
     file.write(f"Correct Answer: {correct}\n\n")
+    
 #check if the variables are correct
 
-    print("The inputted question is: ",input_question)
+    print("\nThe inputted question is: ",input_question)
     print("a.",answer_a)
     print("b.",answer_b)
     print("c.",answer_c)
