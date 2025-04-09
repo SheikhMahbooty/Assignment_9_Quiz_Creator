@@ -42,8 +42,11 @@ while True:
     file.write(f"Correct Answer: {correct}\n\n")
 #check if the variables are correct
 
-    print(input_question)
-    print(answer_a, answer_b, answer_c, answer_d)
-    print(correct)
+    print("The inputted question is: ",input_question)
+    print("a.",answer_a)
+    print("b.",answer_b)
+    print("c.",answer_c)
+    print("d.",answer_d)
+    print("The correct answer is: ",correct)
     
 file.close()
